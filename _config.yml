@@ -1,0 +1,12 @@
+# Site settings
+title: ExpandCLT
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  ExpandCLT is a marketing agency headed by two high school students Matthew Kagan and Mayowa Ogunmola who work with local businesses looking to broaden their consumer base, specifically over social media. We are your premier social media marketing company in the Greater Charlotte area.
+history: As students attending Providence High School, we started growing tired of the consistent theoretical based content.  Until the Entrepreneurship class, that was the only way we knew to learn, but with the help of our teacher, Mr. Patrick Sahd, we were able to explore the different fields of the business world through entrepreneurship. Through that, we created our own company that works with start-up businesses in the area looking to broaden their consumer base.
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
