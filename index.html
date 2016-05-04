@@ -1,86 +1,121 @@
 ---
-layout: default
+layout: default 
 ---
-
-<div class="jumbotron" id="main" style="position: relative;">
-	<div class="container element" align="center">
-		<h1 style="font-family: 'Oswald';z-index:100;width: auto" id="title">{{site.title}}</h1>
-		<hr style="border: 3px solid #777;" class="wow zoomIn" data-wow-delay="250ms">
-		<a href="#about" style="color:#777"><h1 class="fa fa-chevron-down fa-6 wow fadeInDown" data-wow-delay="500ms" aria-hidden="true"></h1></a>
-	</div>
-	<div id="background" align="center"></div>	
-</div>
-
-<nav class="navbar navbar-inverse" id="mainnav" style="margin-bottom: 0">
-  	<div class="container-fluid">
-		<!-- Brand and toggle get grouped for better mobile display -->
-    	<div class="navbar-header">
-      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        		<span class="sr-only">Toggle navigation</span>
-        		<span class="icon-bar"></span>
-        		<span class="icon-bar"></span>
-        		<span class="icon-bar"></span>
-      		</button>
-      		<a class="navbar-brand" href="#" style="font-family:'Lato'">{{site.title}}</a>
-    	</div>
-    	<!-- Collect the nav links, forms, and other content for toggling -->
-    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      		<ul class="nav navbar-nav">
-        		<li><a href="#" style="font-family:'Lato'">Home</a></li>
-        		<li><a href="#about" style="font-family:'Lato'">About</a></li>
-      		</ul>
-    	</div><!-- /.navbar-collapse -->
-  	</div><!-- /.container-fluid -->
+<nav class="navbar navbar-inverse navbar-fixed" style="margin: 0">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" rel="home" href="#" style="font-family: 'expandclt'">A</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#about">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#funfacts">Link</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
 </nav>
-
-<div id="about" style="padding: 5%">
-	<div class="container" align="center">
-		<h1>About {{site.title}}</h1>
-		<h3>{{site.description}}</h3>
-	</div>
+<div class="jumbotron" id="main">
+    <div class="element" style="z-index: 5;position: relative" align="center">
+        <h1 class=""><span class="expand"></span> {{site.title}}</h1>
+    </div>
+    <div class="background"></div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div id="about" class="padding">
+    <div class="container">
+        <div class="col-md-9">
+            <h1>About Us</h1>
+            <h3>ExpandCLT is a marketing agency headed by two high school students Matthew Kagan and Mayowa Ogunmola who work with local businesses looking to broaden their consumer base, specifically over social media. We are your premier social media marketing company in the Greater Charlotte area.</h3>
+        </div>
+        <div class="col-md-3 square3" style="background: url(/phs.jpg);background-size: contain;background-repeat: no-repeat"></div>
+    </div>
+</div>
+<div id="funfacts" class="" align="center">
+    <div class="container">
+        <div class="col-md-4 wow fadeIn padding" data-wow-delay="250ms">
+            <h1 class="fa fa-users"></h1>
+            <h2>Direct Marketing</h2>
+        </div>
+        <div class="col-md-4 wow fadeIn padding" data-wow-delay="500ms">
+            <h1 class="fa fa-twitter"></h1>
+            <h2>Social Media</h2>
+        </div>
+        <div class="col-md-4 wow fadeIn padding" data-wow-delay="750ms">
+            <h1 class="fa fa-dollar"></h1>
+            <h2>Flexible Pricing</h2>
+        </div>
+    </div>
 </div>
 
-<div id="team" style="background:url(bg1.jpeg);background-size: cover;background-position: center center;background-attachment: fixed;color:#FFF">
-	<div class="container" align="center">
-		<br>
-		<div class="row">
-			<div class="col-md-3"></div>
-			<div class="col-md-3">
-				<div style="width: 75%;background: url(/matt.jpg);background-size: cover;border-radius: 50%" class="squareid"></div>
-				<h3 style="font-family:'Raleway'">Matt Kagan</h3>
-				<h4>Indiana University '20</h4>
-			</div>
-			<div class="col-md-3">
-				<div style="width: 75%;background: url(/matt.jpg);background-size: cover;border-radius: 50%" class="squareid"></div>
-				<h3 style="font-family:'Raleway'">Mayowa Ogunmola</h3>
-				<h4>Providence High School '16</h4>
-			</div>
-			<div class="col-md-3"></div>
-		</div>
-	</div>
-</div>
-
-<div id="services" style="padding: 5%" align="center">
+<div id="services" class="padding">
 	<div class="container">
-		<h1>Our History</h1>
-		<h3>{{site.history}}</h3>
+		<h1><i class="fa fa-users"></i> Direct Marketing</h1>
+		<h3>ExpandCLT provides a thorough marketing plan to ensure that you reach your target audience in an efficient manner. This will be done by emails and direct mail to your specific consumer base.</h3>
 	</div>
 </div>
 
-<div id="team" style="background:url(bg1.jpeg);background-size: cover;background-position: center center;background-attachment: fixed;color:#FFF;padding: 10px">
+<div class="about" id="team">
 	<div class="container" align="center">
-		<br>
 		<div class="row">
-			<div class="col-md-4"><h1 class="fa fa-users"></h1><h2>Direct Marketing</h2></div>
-			<div class="col-md-4"><h1 class="fa fa-twitter"></h1><h2>Social Media Marketing</h2></div>
-			<div class="col-md-4"><h1 class="fa fa-dollar"></h1><h2>Specialized Pricing</h2></div>
+			<div class="col-md-3"></div>
+			<div class="col-md-3">
+				<div class="square"></div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="square"></div>
+			</div>
+			<div class="col-md-3"></div>
 		</div>
 	</div>
 </div>
 
-
+<div style="height: 500%"></div>
 <script type="text/javascript">
-	$(".square").css('height', $(".square").width());
-	$(".squareid").css('height', $(".squareid").width());
-	$(".zoomIn").css('width', .5*$("#title").width())
+$(".col-md-4").hover(function(){
+	$(this).animate({
+    background: 00b200
+  }, 5000, function() {
+    // Animation complete.
+  });
+})
+$(document).on('click', 'a[href^="#"]', function(e) {
+    // target element id
+    var id = $(this).attr('href');
+
+    // target element
+    var $id = $(id);
+    if ($id.length === 0) {
+        return;
+    }
+
+    // prevent standard hash navigation (avoid blinking in IE)
+    e.preventDefault();
+
+    // top position relative to the document
+    var pos = $(id).offset().top;
+
+    // animated top scrolling
+    $('body, html').animate({
+        scrollTop: pos
+    });
+});
+$(".square3").css('height', $(".square3").width())
+$(".col-md-4").hover(function()
+{
+	$(this).css('font-size', $(this).css('font-size')*1.25)
+})
 </script>
